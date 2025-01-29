@@ -74,7 +74,7 @@ elif menu == "Career Profile":
     # Tabbed view for Career Profile
     data_option = st.sidebar.selectbox(
         "Choose a category to explore", 
-        ["Education History", "Education History", "Awards & Honours"]
+        ["Education History", "Job History", "Awards & Honours"]
     )
 
     if data_option == "Education History":
