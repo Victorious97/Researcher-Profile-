@@ -55,7 +55,7 @@ if menu == "Researcher Profile":
     st.write(f"**Field of Research:** {field}")
     st.write(f"**Institution:** {institution}")
 
-    st.image('C:/Users/user/Documents/download.png', width=200)
+    st.image('download.png', width=200)
 
 elif menu == "Publications":
     st.title("Publications")
