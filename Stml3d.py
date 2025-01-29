@@ -39,7 +39,7 @@ weather_data = pd.DataFrame({
     "Recorded Date": pd.date_range(start="2024-01-01", periods=5),
 })
 
-name = "Dr. Jane Doe"
+name = "Dr. V A Uzor"
 
 # Sections based on menu selection
 if menu == "Researcher Profile":
@@ -47,8 +47,8 @@ if menu == "Researcher Profile":
     st.sidebar.header("Profile Options")
 
     # Collect basic information
-    field = "Astrophysics"
-    institution = "University of Science"
+    field = "Mathematics"
+    institution = "University of KwaZulu-Natal"
    
     # Display basic profile information
     st.write(f"**Name:** {name}")
@@ -62,7 +62,7 @@ elif menu == "Publications":
     st.sidebar.header("Upload and Filter")
 
     # Upload publications file
-    uploaded_file = st.file_uploader("Upload a CSV of Publications", type="csv")
+    uploaded_file = st.file_uploader("Upload a CSV of Publications",  type=["pdf", "png", "jpg", "jpeg", "docx", "csv"])
     if uploaded_file:
         publications = pd.read_csv(uploaded_file)
         st.dataframe(publications)
@@ -134,5 +134,5 @@ elif menu == "STEM Data Explorer":
 elif menu == "Contact":
     # Add a contact section
     st.header("Contact Information")
-    email = "jane.doe@example.com"
+    email = "uvictor.maths@gmail.com"
     st.write(f"You can reach {name} at {email}.")
