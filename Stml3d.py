@@ -62,7 +62,7 @@ elif menu == "Publications":
     st.sidebar.header("Upload and Filter")
 
     # Upload publications file
-    uploaded_file = st.file_uploader("Upload a CSV of Publications",  type=["pdf", "png", "jpg", "jpeg", "docx", "csv"])
+    uploaded_file = st.file_uploader("Upload List of Publications",  type=["pdf", "png", "jpg", "jpeg", "docx", "csv"])
     if uploaded_file:
         publications = pd.read_csv(uploaded_file)
         st.dataframe(publications)
